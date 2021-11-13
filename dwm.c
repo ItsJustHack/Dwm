@@ -1556,6 +1556,7 @@ run(void)
 
 void runAutostart(void) {
 	system("killall -q dwmblocks; dwmblocks &");
+	system("xrandr --output HDMI1 --right-of eDP1 --mode 1920x1080");
 	system("nitrogen --restore");
 }
 
