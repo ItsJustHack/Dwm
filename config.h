@@ -87,7 +87,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,				XK_d,      spawn,          SHCMD("st nvim /home/eliott/gitclone/dwm/config.h")},
 	{ MODKEY|ShiftMask,				XK_s,	   spawn,          SHCMD("gnome-screenshot -i")},
 	{ MODKEY|ShiftMask,				XK_m,      spawn,          SHCMD("st ncmpcpp")},
-	{ MODKEY|                       Xk_e,      spawn,          SHCMD("ranger")},
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("ranger")},
 	{ MODKEY|ShiftMask,				XK_a,       spawn,          SHCMD("mono /usr/share/keepass/KeePass.exe --auto-type")},
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
