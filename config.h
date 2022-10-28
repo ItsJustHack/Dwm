@@ -30,7 +30,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask isfloating    isterminal  noswallow   monitor */
-	{ "Brave-browser", NULL,  NULL,       1<<2,		  0,				0,           0        -1 },
+	{ "firefox", NULL,  NULL,       1<<2,		  0,				0,           0        -1 },
 	{ "St",      NULL,     NULL,           0,         0,                1,           0,       -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,                0,           1,       -1 }, /* xev */
 };
@@ -83,12 +83,12 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_n,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,						XK_c,	   spawn,          SHCMD("/usr/bin/brave")},
+	{ MODKEY,						XK_c,	   spawn,          SHCMD("/usr/bin/firefox")},
 	{ MODKEY,						XK_m,	   spawn,          SHCMD("st -c st-neomutt neomutt")},
 	{ MODKEY|ShiftMask,				XK_d,      spawn,          SHCMD("st nvim /home/eliott/gitclone/dwm/config.h")},
 	{ MODKEY|ShiftMask,				XK_s,	   spawn,          SHCMD("gnome-screenshot -i")},
 	{ MODKEY|ShiftMask,				XK_m,      spawn,          SHCMD("st ncmpcpp")},
-	{ MODKEY,                       XK_e,      spawn,          SHCMD("st ranger")},
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("st lfub")},
 	{ MODKEY|ShiftMask,				XK_a,       spawn,          SHCMD("mono /usr/share/keepass/KeePass.exe --auto-type")},
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
